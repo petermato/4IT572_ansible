@@ -57,7 +57,7 @@
       become: yes
     - name: Get eshop from GIT
       git:
-        repo: 'https://github.com/petermato/4IT572_ansible.git'
+        repo: 'https://github.com/petermato/4IT572_docker.git'
         dest: ./app
     - name: Build Docker with eshop
       shell: cd app && docker build -t myeshop:latest .
